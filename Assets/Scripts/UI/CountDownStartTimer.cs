@@ -18,7 +18,7 @@ public class CountdownTimer : MonoBehaviour
 
     private IEnumerator StartCountdown()
     {
-        int timeLeft = 5; // Начальное значение таймера
+        int timeLeft = 3; // Начальное значение таймера
 
         // Пока оставшееся время больше или равно нулю
         while (timeLeft >= 1)

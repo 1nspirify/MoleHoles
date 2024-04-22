@@ -5061,6 +5061,11 @@ GameObject:
   - component: {fileID: 374682127058807530}
   - component: {fileID: 4895848922517446479}
   - component: {fileID: 4617825488263703874}
+  - component: {fileID: 1003920452740230679}
+  - component: {fileID: 8656923786003315611}
+  - component: {fileID: 8680811129290000211}
+  - component: {fileID: 3536877806997848382}
+  - component: {fileID: 3629205595228601208}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -5158,6 +5163,96 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1003920452740230679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031713827475714003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a878a6ff128243dfb1d89ca0273f059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStateChange:
+    m_PersistentCalls:
+      m_Calls: []
+  basicEditor: 1
+  generalProps: 0
+  limitsProps: 0
+  advancedProps: 0
+  minPointers: 0
+  maxPointers: 0
+  useSendMessage: 0
+  sendStateChangeMessages: 0
+  sendMessageTarget: {fileID: 0}
+  useUnityEvents: 0
+  sendStateChangeEvents: 0
+  requireGestureToFail: {fileID: 0}
+  friendlyGestures: []
+  OnTap:
+    m_PersistentCalls:
+      m_Calls: []
+  numberOfTapsRequired: 1
+  timeLimit: Infinity
+  distanceLimit: Infinity
+  combinePointers: 0
+  combinePointersInterval: 0.3
+--- !u!114 &8656923786003315611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031713827475714003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c517cc4a48f7d428792615d0867cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Effect: {fileID: 141433446842962269, guid: e355b31333344ce479d0e93bd9ca87c4, type: 3}
+--- !u!114 &8680811129290000211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031713827475714003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31db0b70f8f48f84ba83fec42d02ee7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3536877806997848382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031713827475714003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380f750fa27112c4c8f7996000b153db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointsAddition: {fileID: 6889676053574524597, guid: 4b7bb5e7d6d29d945b94f86d56f13ccf, type: 3}
+--- !u!114 &3629205595228601208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031713827475714003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc2e26480ed4b4fbc3779532a60f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointsCollector: {fileID: 0}
+  Prefab: {fileID: 4486325048069203506}
+  AudioClip: {fileID: 8300000, guid: 5929ca97d00779c4a906ffc648d227ed, type: 3}
+  HammerPrefab: {fileID: 7166785691855684841, guid: 9e7793834b4ad224c9e810ec73a35733, type: 3}
 --- !u!1 &7535266059138953386
 GameObject:
   m_ObjectHideFlags: 0

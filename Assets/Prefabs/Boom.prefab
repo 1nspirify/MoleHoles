@@ -74,6 +74,11 @@ GameObject:
   - component: {fileID: 5950431896755792324}
   - component: {fileID: 1368073290988036024}
   - component: {fileID: 7666505973488191874}
+  - component: {fileID: 1795503894654631950}
+  - component: {fileID: 3646684313322048977}
+  - component: {fileID: 1323658370382761224}
+  - component: {fileID: 2756680406564367105}
+  - component: {fileID: 1553703503887540666}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -168,6 +173,97 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.64
   m_Center: {x: 0, y: 0.15, z: 0}
+--- !u!114 &1795503894654631950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493472108437627143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31db0b70f8f48f84ba83fec42d02ee7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3646684313322048977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493472108437627143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c517cc4a48f7d428792615d0867cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Effect: {fileID: 4593184484909914552, guid: 3ca38baf95940574a8f76ed886807761, type: 3}
+--- !u!114 &1323658370382761224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493472108437627143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380f750fa27112c4c8f7996000b153db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointsAddition: {fileID: 6889676053574524597, guid: c10b7568e5ed86f4a89e1f1eb5faccb0, type: 3}
+  delayInSeconds: 0.6
+--- !u!114 &2756680406564367105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493472108437627143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a878a6ff128243dfb1d89ca0273f059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStateChange:
+    m_PersistentCalls:
+      m_Calls: []
+  basicEditor: 1
+  generalProps: 0
+  limitsProps: 0
+  advancedProps: 0
+  minPointers: 0
+  maxPointers: 0
+  useSendMessage: 0
+  sendStateChangeMessages: 0
+  sendMessageTarget: {fileID: 0}
+  useUnityEvents: 0
+  sendStateChangeEvents: 0
+  requireGestureToFail: {fileID: 0}
+  friendlyGestures: []
+  OnTap:
+    m_PersistentCalls:
+      m_Calls: []
+  numberOfTapsRequired: 1
+  timeLimit: Infinity
+  distanceLimit: Infinity
+  combinePointers: 0
+  combinePointersInterval: 0.3
+--- !u!114 &1553703503887540666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4493472108437627143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88e345c8e79e194b83923438b893525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointsCollector: {fileID: 0}
+  HammerPrefab: {fileID: 7166785691855684841, guid: 9e7793834b4ad224c9e810ec73a35733, type: 3}
+  Prefab: {fileID: 7140581910631580947}
+  audioClip: {fileID: 8300000, guid: 63c15ef584ff78b41940f50b999716bb, type: 3}
 --- !u!1 &7140581910631580947
 GameObject:
   m_ObjectHideFlags: 0

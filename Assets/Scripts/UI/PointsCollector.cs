@@ -9,9 +9,9 @@ public class PointsCollector : MonoBehaviour
     [SerializeField] TextMeshProUGUI PointsCollectorText;
 
     public int Points = 0;
-    public int GreyMouse;
-    public int BlackMouse = 15;
-    public int WhiteMouse = 10;
+   
+    public int Mole = 25;
+    public int Bomb = 15;
 
     // Start is called before the first frame update
     void Update()
@@ -22,12 +22,12 @@ public class PointsCollector : MonoBehaviour
  
     public void PointsAdd()
     {
-        Points += BlackMouse;
+        Points += Mole;
         Debug.Log("Points added: " + Points);
     }
 
     public void PointsRemove()
     {
-        Points -= WhiteMouse;
+        Points -= Bomb;
     }
 }

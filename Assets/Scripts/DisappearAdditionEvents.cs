@@ -5,20 +5,23 @@ using UnityEngine;
 public class DisappearAdditionEvents : MonoBehaviour
 {
     // Reference to PointsCollector
-    public PointsCollector _pointsCollector;
+    public PointsCollector PointsCollector;
     public GameObject Prefab;
-    public AudioClip audioClip;
+    public AudioClip AudioClip;
+    public GameObject HammerPrefab;
+
 
     private void Start()
     {
-        _pointsCollector = FindObjectOfType<PointsCollector>();
+        PointsCollector = FindObjectOfType<PointsCollector>();
         GetComponent<ObjectInterAction>().OnObjectTapped += HandleObjectTapped;
     }
 
     // Override the HandleObjectTapped method
     public void HandleObjectTapped()
     {
-         _pointsCollector.PointsAdd();
+        Instantiate(HammerPrefab, transform.position, Quaternion.identity);
+        PointsCollector.PointsAdd();
         PlaySound();
         Destroy(Prefab);
     }
@@ -28,12 +31,12 @@ public class DisappearAdditionEvents : MonoBehaviour
     {
         GameObject tempAudioObject = new GameObject("TempAudio");
         AudioSource audioSource = tempAudioObject.AddComponent<AudioSource>();
-        audioSource.clip = audioClip;
+        audioSource.clip = AudioClip;
         audioSource.volume = 0.3f; // Устанавливаем громкость на 0.3
         audioSource.pitch = Random.Range(0.7f, 0.9f); // Устанавливаем случайный pitch в диапазоне от 0.95 до 1.05
         audioSource.Play();
 
         // Уничтожаем временный объект после воспроизведения звука
-        Destroy(tempAudioObject, audioClip.length);
+        Destroy(tempAudioObject, AudioClip.length);
     }
 }

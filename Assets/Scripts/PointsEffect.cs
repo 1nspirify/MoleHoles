@@ -6,6 +6,7 @@ using UnityEngine;
 public class PointsEffect : MonoBehaviour
 {
     [SerializeField] private GameObject _pointsAddition;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class PointsEffect : MonoBehaviour
 
     public void HandleObjectTapped()
     {
-        
-        Instantiate(_pointsAddition, transform.position, Quaternion.identity);
+        Vector3 spawnPosition = transform.position + Vector3.up;
+        Instantiate(_pointsAddition, spawnPosition, Quaternion.identity);
     }
 }
