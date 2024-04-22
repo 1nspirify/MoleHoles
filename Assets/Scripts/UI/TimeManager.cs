@@ -14,7 +14,7 @@ public class TimeManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _timer = 99f;
+        _timer = 999f;
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class TimeManager : MonoBehaviour
             BlackPanel.SetActive(true);
             Score.text = "SCORE: " + PointsCollector.Points.ToString();
             Time.timeScale = 0f;
-            _timer = 99f;
+            _timer = 999f;
 
         }
     }

@@ -5110,14 +5110,15 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 8.02, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.1155285, y: 0.1155285, z: 0.1155285}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 498340}
   - {fileID: 498338}
+  - {fileID: 5615240918060142109}
   - {fileID: 406780}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!95 &9598324
 Animator:
   serializedVersion: 5
@@ -5139,3 +5140,57 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &5194275250153884923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5615240918060142109}
+  - component: {fileID: 3712418232555421803}
+  m_Layer: 0
+  m_Name: TargetForHat
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5615240918060142109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194275250153884923}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000014603136}
+  m_LocalPosition: {x: 0.16, y: -1.97, z: -0.16}
+  m_LocalScale: {x: 5.5844336, y: 5.5844336, z: 5.5844336}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 498342}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3712418232555421803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194275250153884923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110fb5136efb363488cb3ace91a419c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hats:
+  - {fileID: 100000, guid: a20ea7771cebbda4696ef82ef45481a0, type: 3}
+  - {fileID: 100000, guid: 290f57b34312fbf448d3b8ca6b6bd41d, type: 3}
+  - {fileID: 100000, guid: c49b578c54f48fd47aca6b1eda6be743, type: 3}
+  - {fileID: 100000, guid: cf015317a103ab34483db3f2dc6f0f59, type: 3}
+  - {fileID: 100000, guid: 565e3543feaac1b408a41f8c0d67febd, type: 3}
+  - {fileID: 100000, guid: 1e46f1bfa8a3e6f4c89441c63032e7f4, type: 3}
+  - {fileID: 100000, guid: a9853556c4fc4d44087cd153918f7305, type: 3}
+  - {fileID: 100000, guid: 598a1f45fefa08846b93be35e98f166e, type: 3}
+  - {fileID: 100000, guid: a0dfaf0497ab5334a99165f16b697e6e, type: 3}
